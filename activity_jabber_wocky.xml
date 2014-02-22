@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".JabberWockyActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/jabberwockywebview" />
+    
+    <Button
+        android:id="@+id/jabberWockyWikipedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_alignLeft="@id/textView1"
+        android:layout_marginBottom="16dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/jabberwockywikipedia" />
+    
+    <Button
+        android:id="@+id/jabberWockyPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@id/jabberWockyWikipedia"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:text="@string/jabberwockypicture" />
+    
+    <ScrollView
+        android:id="@+id/scrolly"
+        android:layout_width="320dp"
+        android:layout_height="240dp"
+        android:layout_below="@id/jabberWockyPicture"
+        android:paddingTop="16dp" >
+    	
+    	<TextView
+        	android:id="@+id/jabberwocky_poem"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:paddingTop="8dp"
+        	android:text="@string/jabberwockypoem"
+        	android:textSize="16sp" />
+        
+    </ScrollView>
+    
+</RelativeLayout>
